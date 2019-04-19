@@ -1,17 +1,26 @@
 # Елементи вводу в командній оболонці системи
+# Elements of an input in the command shell of the system
 
 ### Команда
+### Command
 
 Рядок що містить фразу для позначення наміру розробника і дії, котрі будуть виконані утилітою по її введенні. Вводиться в інтерфейс командного рядка розробником.
 
-### Фраза
+The raw which has a phrase to mark the intension of the developer and actions, which will be done by utility after it was introduced.
+
+### Phrase
 
 Слово або декілька слів, відокремлених крапкою, позначає команду, яку має виконати утиліта.
 
+Word or the couple of the words which are separated by a point symbolize the command which should be done by utility.
+
 Крапка розділяє слова фрази на частини, що полегшує набір і зчитування.  
+
+A point separate the words of the phrase on the parts, what facilitates typing and reading processes.
 
 Приклад:
 
+Example
 ```
 will .help
 will .about.list
@@ -21,16 +30,22 @@ will .paths.list
 ```
 
 ### Команди утиліти `willbe`
+
+### Commands of the utility `willbe`
+
+
 Для виводу команд утиліти наберіть `will .` або `will .help`
 
-| Фраза             | Опис                                       | Команда                |
+To display the commands of the utility, type `will` or `will .help`
+
+| Phrase| Description                                       | Command                |
 |-------------------|--------------------------------------------|----------------------------------|
-| `.help`           | Вивід інформації про команду               | `will .help .[command]`          |
-| `.set`            | Встановлення параметрів для команди        | `will .set [properties] .[command] [argument]`                                   |
-| `.resources.list` | Вивід всієї доступної інформації про поточний модуль          | `will .resources.list [resources] [criterion]`                                  |
-| `.paths.list`     | Перерахунок наявних шляхів поточного модуля | `will .paths.list [resources] [criterion]`         |
-| `.submodules.list` | Перерахунок наявних підмодулів поточного модуля                     | `will .submodules.list [resources] [criterion]`     |
-| `.reflectors.list` | Перерахунок наявних рефлекторів поточного модуля                         | `will .reflectors.list [resources] [criterion]`     |
+| `.help`           | Display an information about the command| `will .help .[command]`          |
+| `.set`            |    Setting parameters for the command     | `will .set [properties] .[command] [argument]`                                   |
+| `.resources.list` | Display all available information about current module   | `will .resources.list [resources] [criterion]`                                  |
+| `.paths.list`     |  Recalculation of available paths of the current module | `will .paths.list [resources] [criterion]`         |
+| `.submodules.list` | Recalculation of available submodules of the current module                   | `will .submodules.list [resources] [criterion]`     |
+| `.reflectors.list` |  Recalculation of available reflectors of the current module                        | `will .reflectors.list [resources] [criterion]`     |
 | `.steps.list`     | Перерахунок наявних кроків поточного модуля                              | `will .steps.list [resources] [criterion]`          |
 | `.builds.list `   | Перерахунок наявних збірок поточного модуля            | `will .builds.list [resources] [criterion]`         |
 | `.exports.list`   | Перерахунок наявних збірок для екаспортування поточного модуля            | `will .exports.list [resources] [criterion]`        |

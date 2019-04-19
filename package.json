@@ -1,0 +1,56 @@
+{
+  "name": "willbe",
+  "version": "0.3.233",
+  "description": "Utility to manage modules of complex modular systems",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license": "MIT",
+  "enabled": 1,
+  "main": "proto/dwtools/atop/will/MainTop.s",
+  "files": [
+    "proto/dwtools/atop/will",
+    "proto/dwtools/Tools.s",
+    "production"
+  ],
+  "bin": {
+    "will": "proto/dwtools/atop/will/Exec2"
+  },
+  "scripts": {
+    "test": "wtest proto",
+    "docgen": "wdocgen proto",
+    "will": "node proto/dwtools/atop/will/Exec2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/willbe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/willbe/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wCopyable": "",
+    "wLogger": "",
+    "wverbal": "",
+    "wtemplatetreeenvironment": "",
+    "wexternalfundamentals": "",
+    "wFiles": "",
+    "wfilesarchive": "",
+    "wfilesencoders": "",
+    "wstatestorage": "",
+    "wstatesession": "",
+    "wstager": "",
+    "wcommandsaggregator": "",
+    "wcommandsconfig": "",
+    "wnamemapper": "",
+    "wtranspilationstrategy": "",
+    "tar": "",
+    "gitconfiglocal": "",
+    "open": ""
+  },
+  "devDependencies": {
+    "wTesting": ""
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
